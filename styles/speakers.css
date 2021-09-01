@@ -1,0 +1,83 @@
+.speaker-container {
+	position: relative;
+	transition: all 0.5s ease-in-out;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 300px;
+	/* background: rgba(0, 0, 0, 0.8); */
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+    transition: width 0.25s ease-out 150ms, padding 0.25s ease-out 150ms, max-height 0.25s ease-out 0.2s;
+    overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 9999;
+	width: 0;
+	height: 300px;
+	transition: all 0.3s ease;
+}
+
+.speakers-active .overlay {
+	width: 860px;
+	height: 800px;
+	transform: scale(1);
+}
+
+.active-speaker {
+	/* position: absolute; */
+	filter: none;
+	z-index: 9999;
+	transform: scale(1.05);
+	left: 0px;
+}
+
+.speaker-container {
+	transition: all 0.3s ease;
+}
+
+/* .speakers:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 40px 0 rgb(0 0 0 / 40%);
+} */
+
+.speakers-active .speakers:hover {
+	transform: scale(1.00) !important;
+}
+
+.speaker-container:hover {
+	transform: scale(1.05);
+	z-index: 10;
+}
+
+/* .no-left {
+	position: relative;
+	left: 0;
+}
+
+.left-sm {
+	position: relative;
+	left: -300px;
+}
+
+.left-md {
+	position: relative;
+	left: -600px;
+}
+
+.left-lg {
+	position: relative;
+	left: -900px;
+} */
+
+.speakers-absolute {
+	position: absolute;
+	top: 0;
+}
+
+.speaker-relative {
+	max-width: 300px;
+	height: auto;
+}

@@ -1,0 +1,48 @@
+
+.navbar {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: black;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+}
+
+.navbar li {
+  float: left;
+  width: 10rem;
+}
+
+.navbar div {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 48rem;
+  justify-content: center;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-decoration: none;
+  border-width: 0 0 0.25rem 0;
+  border-color: black;
+  border-style: solid;
+  -webkit-box-flex: 1;
+  flex: 1;
+  background-color: black;
+}
+
+.selected {
+  border-color: white !important;
+}

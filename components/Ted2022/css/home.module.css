@@ -1,0 +1,49 @@
+.mapRibbon {
+  height: 460px;
+  width:  50%;
+  margin: 0px;
+  position: relative;
+}
+
+.lastRibbon {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+
+.locatinRibbon {
+  width: 50%;
+}
+
+@media screen and (max-width: 639px) {
+    .lastRibbon {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .mapRibbon{
+        height: 20rem;
+        width: 320px;
+
+    }
+    .locatinRibbon {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mapRibbon{
+        width: 638px;
+    }
+    .lastRibbon {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .mapRibbon{
+        height: 20rem;
+    }
+}
